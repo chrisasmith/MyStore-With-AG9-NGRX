@@ -1,0 +1,17 @@
+:host {
+  width: 100%;
+  height: 100%;
+  .pos {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 100%;
+    .products{
+      flex: 0 0 70%
+    }
+    .cart {
+      flex: 0 0 29%;
+      border-left: 2px solid dimgrey;
+    }
+  }
+}

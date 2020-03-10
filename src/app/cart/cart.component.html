@@ -1,0 +1,22 @@
+<div class="cart">
+  <div class="items-list">
+    <header>
+      <p style="padding-right: 5px">Item List</p><p *ngIf="itemList">({{itemList.length}})</p>
+    </header>
+    <div>
+      <app-cart-item
+        *ngFor="let item of itemList; let o = odd"
+        [info]="{odd: o, info: item}"></app-cart-item>
+    </div>
+  </div>
+  <div class="receipt-view">
+    <div class="receipt">
+      <div class="combined-tax">
+        <p>Sales Taxes: {{ totalTax | currency}}</p>
+      </div>
+      <div class="combined-total">
+        <p>Total:  {{ totalPrice | currency}}</p>
+      </div>
+    </div>
+  </div>
+</div>

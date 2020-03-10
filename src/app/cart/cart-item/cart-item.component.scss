@@ -1,0 +1,22 @@
+:host {
+  .item {
+    height: fit-content;
+    padding: 5px;
+    border-bottom: 1px solid gainsboro;
+    header {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    main {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+  }
+  .odd {
+    background-color: aliceblue;
+  }
+}

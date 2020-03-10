@@ -1,0 +1,16 @@
+<div class="pos">
+  <div class="products">
+    <app-product-viewer>
+      <div productGrid>
+        <app-product *ngFor="let product of products; let idx = index"
+                     [id]="idx"
+                     [product]="product"
+                     (click)="updatePosStore(product)">
+        </app-product>
+      </div>
+    </app-product-viewer>
+  </div>
+  <div class="cart">
+    <app-cart *ngIf="cart$ | async; let cart;" [items]="cart" [taxes]="tax"></app-cart>
+  </div>
+</div>

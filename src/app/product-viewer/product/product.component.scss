@@ -1,0 +1,44 @@
+:host{
+  .product {
+    display: flex;
+    flex-flow: column;
+
+    width: 285px;
+    max-height: 400px;
+    margin: 0 15px 30px 0;
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    &:hover {
+      border: 2px solid #35BADB;
+    }
+
+    &-image {
+      max-width: 100%;
+      width: 300px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      height: 180px;
+      object-fit: cover;
+    }
+    &-details {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 8px 15px;
+
+      .name {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .price {
+        font-weight: 500;
+        opacity: 0.7;
+        letter-spacing: 1px;
+        margin: 0;
+      }
+    }
+  }
+}

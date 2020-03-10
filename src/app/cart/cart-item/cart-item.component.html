@@ -1,0 +1,9 @@
+<div class="item" [ngClass]="{'odd': itemData.odd}" [id]="itemData?.info.id">
+  <header class="">
+    <div class="title">Item Name: {{itemData?.info.name}}</div>
+    <button mat-icon-button class="remove">X</button>
+  </header>
+  <main>
+    <div class="price">Cost: {{itemData?.info.priceTaxed | currency}}</div>
+  </main>
+</div>

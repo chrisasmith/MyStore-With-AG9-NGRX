@@ -1,0 +1,12 @@
+:host {
+  width: 100%;
+  .product-viewer {
+    width: 100%;
+    padding: 20px;
+    ::ng-deep div {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+  }
+}
